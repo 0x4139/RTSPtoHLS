@@ -11,8 +11,8 @@ app.get('/cam/:index', function(req, res){
   var cameraStream = fork.spawn("./ffmpeg", [
                         "-i",address+req.params.index,
                         "-codec:v", "copy",
-                        "-bufsize","1000k",
-                        "-threads","1",
+                        "-bufsize","100k",
+                        "-threads","5",
                         "-codec:a","libfdk_aac",
                         "-f","mp4",
                         "-movflags","frag_keyframe",
