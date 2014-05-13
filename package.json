@@ -1,0 +1,16 @@
+{
+  "name": "RTSPtoHLS",
+  "version": "0.0.1",
+  "description": "converts rtsp streams to hls",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "0x4139@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.2.0",
+    "request": "^2.34.0",
+    "pump": "^0.3.2"
+  }
+}
